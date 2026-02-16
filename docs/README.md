@@ -4,8 +4,9 @@ This folder contains static legal pages for GitHub Pages hosting.
 
 ## Files
 
-- `index.html` redirects to the privacy policy.
+- `index.html` is a legal landing page.
 - `privacy-policy.html` is the policy page you can submit to app stores.
+- `terms-of-service.html` is the terms page.
 
 ## Publish on GitHub Pages
 
@@ -21,11 +22,11 @@ Your live URLs will be:
 
 - `https://<your-github-username>.github.io/<your-repo>/`
 - `https://<your-github-username>.github.io/<your-repo>/privacy-policy.html`
+- `https://<your-github-username>.github.io/<your-repo>/terms-of-service.html`
 
 ## Before You Publish
 
-Update placeholders in `privacy-policy.html`:
+Review legal contact details in:
 
-- `[INSERT LEGAL ENTITY OR DEVELOPER NAME]`
-- `privacy@example.com`
-- `[INSERT ADDRESS]` (optional)
+- `privacy-policy.html`
+- `terms-of-service.html`
