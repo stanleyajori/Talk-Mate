@@ -1,0 +1,31 @@
+# Talk Mate Legal Docs
+
+This folder contains static legal pages for GitHub Pages hosting.
+
+## Files
+
+- `index.html` redirects to the privacy policy.
+- `privacy-policy.html` is the policy page you can submit to app stores.
+
+## Publish on GitHub Pages
+
+1. Push this repository to GitHub.
+2. Open **Settings -> Pages** in your GitHub repository.
+3. Under **Build and deployment**:
+   - Source: `Deploy from a branch`
+   - Branch: `main` (or your release branch)
+   - Folder: `/docs`
+4. Save and wait for Pages deployment.
+
+Your live URLs will be:
+
+- `https://<your-github-username>.github.io/<your-repo>/`
+- `https://<your-github-username>.github.io/<your-repo>/privacy-policy.html`
+
+## Before You Publish
+
+Update placeholders in `privacy-policy.html`:
+
+- `[INSERT LEGAL ENTITY OR DEVELOPER NAME]`
+- `privacy@example.com`
+- `[INSERT ADDRESS]` (optional)

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Talk Mate Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+          sans-serif;
+        background: #f6f8fb;
+        color: #111827;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 18px 56px;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #0f172a;
+        line-height: 1.25;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 10px;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      h3 {
+        margin-top: 20px;
+      }
+      p,
+      li {
+        line-height: 1.6;
+      }
+      .meta {
+        background: #e8eef9;
+        border: 1px solid #c9d8f2;
+        border-radius: 10px;
+        padding: 12px 14px;
+        margin: 14px 0 22px;
+      }
+      code {
+        background: #eef2ff;
+        padding: 2px 5px;
+        border-radius: 5px;
+      }
+      a {
+        color: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Talk Mate Privacy Policy</h1>
+      <div class="meta">
+        <p><strong>Effective date:</strong> February 16, 2026</p>
+        <p><strong>Last updated:</strong> February 16, 2026</p>
+        <p><strong>App:</strong> Talk Mate</p>
+        <p><strong>Operator:</strong> ojuni</p>
+      </div>
+
+      
+
+      <h2>1. Scope</h2>
+      <p>
+        This Privacy Policy explains how Talk Mate collects, uses, shares, and stores information
+        when you use the mobile app, related backend services, and connected payment features.
+      </p>
+
+      <h2>2. Information We Collect</h2>
+
+      <h3>2.1 Account and identity data</h3>
+      <p>When you sign in with Google through Supabase Authentication, we process:</p>
+      <ul>
+        <li>Supabase user ID</li>
+        <li>Email address</li>
+        <li>Name and profile image (if available from Google)</li>
+        <li>Authentication provider metadata</li>
+      </ul>
+
+      <h3>2.2 Conversation and translation data</h3>
+      <p>
+        If you are signed in, Talk Mate stores your conversation history in Supabase, including:
+      </p>
+      <ul>
+        <li>Original text and translated text</li>
+        <li>Speaker role (A/B), timestamps, and session IDs</li>
+        <li>Conversation title, preview text, message counts, and pin status</li>
+      </ul>
+
+      <h3>2.3 Audio and speech processing data</h3>
+      <p>Talk Mate uses microphone input for voice features.</p>
+      <ul>
+        <li>Legacy voice mode sends audio to Google Speech-to-Text to transcribe speech.</li>
+        <li>
+          Continuous duplex mode streams audio to Talk Mate's voice gateway, which uses Google Cloud
+          Speech-to-Text, Translation, and Text-to-Speech.
+        </li>
+        <li>
+          Generated TTS audio is returned for playback. We do not intentionally publish raw user audio
+          publicly.
+        </li>
+      </ul>
+
+      <h3>2.4 Subscription and billing data</h3>
+      <p>For in-app purchases, we use RevenueCat and app store billing systems.</p>
+      <ul>
+        <li>RevenueCat app user mapping (Supabase user ID)</li>
+        <li>Entitlement status (for example, <code>Talk Mate Pro</code>)</li>
+        <li>Product identifiers, expiry timestamps, and sync timestamps</li>
+        <li>Webhook event IDs used for idempotency and fraud/misconfiguration protection</li>
+      </ul>
+      <p>
+        Payment card details are processed by Apple App Store / Google Play and are not stored by Talk
+        Mate servers.
+      </p>
+
+      <h3>2.5 Voice quota and usage enforcement data</h3>
+      <p>To enforce free-tier limits and premium access, we process:</p>
+      <ul>
+        <li>Daily voice usage counters (milliseconds used per UTC day)</li>
+        <li>Remaining quota and paywall-required state</li>
+      </ul>
+
+      <h3>2.6 Rewarded ads data (non-premium fallback)</h3>
+      <p>
+        On Android, Talk Mate may show rewarded ads through Google AdMob for eligible non-premium
+        users.
+      </p>
+      <ul>
+        <li>Ad request and interaction events (through AdMob SDK)</li>
+        <li>Device/advertising identifiers and network metadata handled by Google AdMob</li>
+      </ul>
+
+      <h3>2.7 AI-generated conversation title data</h3>
+      <p>
+        If enabled, Talk Mate may send a small subset of recent translated conversation messages to
+        Google's Gemini API to generate short conversation titles.
+      </p>
+
+      <h3>2.8 Local on-device storage</h3>
+      <p>Talk Mate stores limited local cache data on your device, such as:</p>
+      <ul>
+        <li>Theme preference</li>
+        <li>Cached signed-in profile snapshot</li>
+        <li>Cached conversation snippets for faster reload</li>
+      </ul>
+
+      <h3>2.9 Operational logs</h3>
+      <p>
+        We may process technical logs and performance metrics (for example latency metrics, socket
+        errors, and billing check errors) for reliability and abuse prevention.
+      </p>
+
+      <h2>3. How We Use Information</h2>
+      <ul>
+        <li>Provide speech recognition, translation, and text-to-speech features</li>
+        <li>Save and sync conversation history across signed-in devices</li>
+        <li>Authenticate users and secure app sessions</li>
+        <li>Provide, sync, and enforce subscriptions and entitlement status</li>
+        <li>Enforce free-tier voice quotas and paywall rules</li>
+        <li>Offer rewarded ad continuation paths for eligible non-premium users</li>
+        <li>Improve reliability, troubleshoot, and prevent abuse or fraud</li>
+      </ul>
+
+      <h2>4. Legal Bases (EEA/UK Users)</h2>
+      <p>Where applicable, we process personal data under one or more of these legal bases:</p>
+      <ul>
+        <li>Contract performance (providing app features you request)</li>
+        <li>Legitimate interests (security, fraud prevention, service reliability)</li>
+        <li>Consent (where required, such as permissions or certain ad processing)</li>
+        <li>Legal obligations (tax, audit, or compliance requirements)</li>
+      </ul>
+
+      <h2>5. Sharing and Service Providers</h2>
+      <p>We share data with vendors only as needed to operate the service, including:</p>
+      <ul>
+        <li>
+          <strong>Supabase</strong> (authentication, database, realtime sync, edge functions):<br />
+          <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer"
+            >https://supabase.com/privacy</a
+          >
+        </li>
+        <li>
+          <strong>Google APIs and Google Cloud</strong> (STT, TTS, translation, Gemini title
+          generation):<br />
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
+            >https://policies.google.com/privacy</a
+          >
+        </li>
+        <li>
+          <strong>RevenueCat</strong> (subscription infrastructure):<br />
+          <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer"
+            >https://www.revenuecat.com/privacy/</a
+          >
+        </li>
+        <li>
+          <strong>Apple App Store / Google Play</strong> (purchase transactions and billing)</li>
+        <li>
+          <strong>Google AdMob</strong> (rewarded ads):<br />
+          <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer"
+            >https://support.google.com/admob/answer/6128543</a
+          >
+        </li>
+      </ul>
+      <p>
+        We may also disclose data when required by law, to enforce terms, or to protect rights, safety,
+        and security.
+      </p>
+
+      <h2>6. Data Retention</h2>
+      <ul>
+        <li>Conversation history is retained until deleted by the user or by account deletion workflow.</li>
+        <li>Billing and entitlement records are retained as needed for subscription operations and audits.</li>
+        <li>Quota/usage records are retained for free-tier and abuse-control operations.</li>
+        <li>On-device caches remain until cleared, overwritten, sign-out cleanup, or app uninstall.</li>
+      </ul>
+
+      <h2>7. Security</h2>
+      <p>
+        We use reasonable technical and organizational safeguards, including authenticated access,
+        row-level security policies in Supabase, and server-side entitlement enforcement. No system is
+        100% secure, and we cannot guarantee absolute security.
+      </p>
+
+      <h2>8. Your Choices and Rights</h2>
+      <ul>
+        <li>You can use guest mode, or sign in for synced cloud history.</li>
+        <li>You can delete conversation sessions in-app.</li>
+        <li>You can restore or manage subscriptions through RevenueCat and store settings.</li>
+        <li>You can revoke microphone permission in device settings.</li>
+        <li>You can reset ad identifiers or limit ad personalization in device settings.</li>
+      </ul>
+      <p>
+        Depending on your location, you may have rights to access, delete, correct, or export personal
+        data. Contact us to submit a request.
+      </p>
+
+      <h2>9. Do Not Sell or Share (US State Notices)</h2>
+      <p>
+        Talk Mate does not sell your personal information for money. Ad-related processing by third-party
+        SDKs may be considered "sharing" or targeted advertising under some laws; you can limit this via
+        device privacy settings and applicable consent controls.
+      </p>
+
+      <h2>10. Children's Privacy</h2>
+      <p>
+        Talk Mate is not directed to children under 13 (or the equivalent minimum age in your
+        jurisdiction). If you believe a child provided personal data, contact us so we can take
+        appropriate action.
+      </p>
+
+      <h2>11. International Data Transfers</h2>
+      <p>
+        Your data may be processed in countries other than your own by our service providers. Where
+        required, we apply appropriate safeguards for cross-border transfers.
+      </p>
+
+      <h2>12. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. We will post the revised version here and
+        update the "Last updated" date.
+      </p>
+
+      <h2>13. Contact</h2>
+      <p>
+        Privacy contact email:
+        <a href="mailto:ojvni.dev@gmail.com">ojvni.dev@gmail.com</a>
+        (replace with your real support email before publishing).
+      </p>
+      <p>Business contact: ojuni</p>
+      <p>Mailing address: stanleyajori@gmail.com</p>
+    </main>
+  </body>
+</html>
