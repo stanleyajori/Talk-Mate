@@ -7,6 +7,7 @@ This folder contains static legal pages for GitHub Pages hosting.
 - `index.html` is a legal landing page.
 - `privacy-policy.html` is the policy page you can submit to app stores.
 - `terms-of-service.html` is the terms page.
+- `account-deletion.html` is the account deletion page for Google Play.
 
 ## Publish on GitHub Pages
 
@@ -23,6 +24,7 @@ Your live URLs will be:
 - `https://<your-github-username>.github.io/<your-repo>/`
 - `https://<your-github-username>.github.io/<your-repo>/privacy-policy.html`
 - `https://<your-github-username>.github.io/<your-repo>/terms-of-service.html`
+- `https://<your-github-username>.github.io/<your-repo>/account-deletion.html`
 
 ## Before You Publish
 
